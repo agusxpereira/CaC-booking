@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"><img src="./img/bookbox-logo.PNG" alt="" id="logo-bookbox"></div>
+
+        <h1>BookBox</h1> 
+
+        <div class="handle-user">
+            <div class="button-sign-in">
+                <button id="handle-sign-in">
+                    Iniciar Sesion
+                </button>
+            </div>
+            <div class="button-signup">
+            <button id="handle-sign-up">
+                    Crear cuenta
+            </button>
+            </div>
+        </div>
+    </header> 
+
+    <div class="container display-column-center">
+        <h2>Lista de Libros:</h2>
+        
+        <div class="list-cards-books display-column-center" id="list-cards-books">
+            <!--cards generadas automaticamente--> 
+            <button id="add-book"> Añadir Libro:</button>
+
+                <!-- <div class="handle-card">
+
+                    <button id="delete-card">
+                        delete
+                    </button
+                    ><button id="edit-card">
+                        edit
+                    </button>
+                    <button id="rate-card">rate</button>
+                </div> -->
+
+            </div>
+
+        </div> 
+    </div>
+    <div class="isHide display-column-center" id="modal">
+        <form action="" method="post" id="post-book">
+            <p>Titulo</p>
+            <input type="text" id="title" placeholder="titulo">
+            <p>Autor</p>
+            <input type="text" id="author" placeholder="autor">
+            <p>genero</p>
+            <input type="text" id="genre" placeholder="genero">
+            <p>Resumen</p>
+            <input type="text" id="about" placeholder="about">
+            <p>Páginas</p>
+            <input type="number" id="pages" placeholder="paginas"> 
+            <button id="send-book">Enviar!</button>
+        </form>
+    </div>
+    <footer>
+
+    </footer> 
+
+    <script src="js/main.js"></script>
+    <script src="js/get_books.js"></script>
+    <script src="js/post_book.js"></script>
+</body>
+</html>

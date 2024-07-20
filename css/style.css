@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color-white: #f9f9f9;
+    --main-black: #000;
+    --border-radius-main: 5px;
+    --main-gray:rgb(161 161 170);
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px; 
+
+    background-color: #000;
+    color:var(--main-color-white); 
+
+    min-height: 120px;
+
+    box-shadow: #fff 1px 1px;
+
+    .handle-user{
+        min-width: 30%;
+        max-width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px; 
+
+        button{
+            color: var(--main-color-white);
+            background: none;
+            border: none;
+        }
+        button:hover{
+            color: white;
+            text-shadow: #f9f9f9;
+            text-decoration: underline;
+        }
+    }
+} 
+
+
+#logo-bookbox{
+    max-width: 128px;
+    max-height: 128px;
+} 
+
+.display-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f9f9f9;
+    min-height: 700px;
+    justify-content: flex-start;
+    gap: 10px;
+    .list-cards-books{
+        width: 90%;
+        background-color: var(--main-gray);
+        justify-content: center;
+        border-radius: 5px;
+        .card{
+            margin-top: 5%;
+            width: 70%;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            border-radius: var(--border-radius-main); 
+    
+            background-color: #f9f9f9;
+            
+    
+            .info{
+                h3{
+                    box-shadow: 0px 1px var(--main-black);
+                }
+                li{
+                    margin-left: 15px;
+                    list-style: none;
+                }
+            }
+            
+            .handle-card{
+                margin-right: 5px;
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                button{
+                    color: #f9f9f9;
+                    width: 60%;
+                    border: none;
+                    box-shadow: #000 2px 2px; 
+                    background: none;
+                    border-radius: 3px;
+                }
+    
+                #delete-card{
+                   
+                    background-color: red;
+                }
+    
+                #edit-card{
+                    background-color: blue;
+                }
+                #rate-card{
+                    background-color: cadetblue;
+                }
+            }
+    
+            .img{
+                height: 100%;
+                border-radius: var(--border-radius-main);
+                #img-bookcase{
+                    min-height: 100%;
+                    max-height: 100%;
+                
+                    border-top-left-radius: var(--border-radius-main);
+                    border-bottom-left-radius: var(--border-radius-main);
+                }
+            }
+        }
+    
+    }
+
+
+   
+
+} 
+.isHide{
+    display: none;
+}
+
+#modal{
+     
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+} 
+
+#post-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--main-color-white);
+    width: 50%;
+    height: 70%;
+    input{
+        background-color: none;
+        width: 30%;
+    } 
+    button{
+        background: none;
+        width: 30%;
+        border-radius: var(--border-radius-main);
+    }
+}
+
+
